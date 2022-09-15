@@ -39,10 +39,31 @@ public enum Entries {
     Reverse11("Reverse", new String[]{"verb", "Revoke ruling."}),
     Reverse12("Reverse", new String[]{"verb", "To be updated..."}),
     Reverse13("Reverse", new String[]{"verb", "To be updated..."}),
-    Reverse14("Reverse", new String[]{"verb", "Turn something inside out."});
+    Reverse14("Reverse", new String[]{"verb", "Turn something inside out."}),
+    Love("Love", new String[]{"noun", "What is it?"}),
+    Disregard("Disregard", new String[]{"verb","Discard."}),
+    Disregard1("Disregard1", new String[]{"verb","Ignore."}),
+    Help("Help", new String[]{"noun","Aid."}),
+    Help1("Help", new String[]{"verb", "To assist."}),
+    Learn("Learn", new String[]{"verb", "To be updated..."}),
+    Fail("Fail", new String[]{"noun", "To be updated..."}),
+    Fail1("Fail", new String[]{"verb", "To be updated..."}),
+    Wonder("Wonder", new String[]{"noun", "To be updated..."}),
+    Wonder2("Wonder", new String[]{"verb", "To be updated..."}),
+    Think("Think", new String[]{"verb", "To be updated..."}),
+    Rewind("Rewind", new String[]{"verb", "To be updated..."}),
+    Certain("Certain", new String[]{"noun", "To be updated..."}),
+    List("List", new String[]{"noun", "To be updated..."}),
+    Map("Map", new String[]{"noun", "To be updated..."}),
+    Map1("Map", new String[]{"noun", "To be updated..."}),
+    Map2("Map", new String[]{"noun", "To be updated..."}),
+    Array("Array", new String[]{"noun", "To be updated..."}),
+    Stack("Stack", new String[]{"noun", "To be updated..."}),
+    Stack1("Stack", new String[]{"noun", "To be updated..."}),
+    Stack2("Stack", new String[]{"verb", "To be updated..."});
 
-    private String word;
-    private String[] def;
+    private final String word;
+    private final String[] def;
 
     private Entries(String word, String[] def){
         this.word = word;

@@ -16,7 +16,6 @@ public class Query {
     private boolean pos;
     private boolean distinct;
     private boolean reverse;
-
     private boolean printHelp;
 
 
@@ -93,6 +92,7 @@ public class Query {
             return;
         }
 
+        arg = arg.toLowerCase();
         if(!isValidKey) return;
 
         StringBuilder invalid = new StringBuilder();
@@ -192,8 +192,8 @@ public class Query {
             if(distinct) {
                 if(!map.containsValue(str[1]) && !pos) {
                     map.put(str[0], str[1]);
-                } else if(!map.containsValue(str[1]) && str.equals(partOfSpeech)) {
-                    map.put(str[0], str[1]);
+                } else {
+                    map.containsValue(str[1]);
                 }
             }
 
@@ -217,7 +217,7 @@ public class Query {
                 collection.forEach(def -> {
                     stack.add("\t " + keyword + " [" +
                             key
-                            + "] " +  def + "\n");
+                            + "] : " +  def + "\n");
                 });
             });
             while(!stack.isEmpty()) {
